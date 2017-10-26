@@ -88,7 +88,7 @@ public class CheeseController {
         return "cheese/index";
     }
 
-    @RequestMapping(value="edit/{cheeseId}", method = RequestMethod.GET)
+    /**@RequestMapping(value="edit/{cheeseId}", method = RequestMethod.GET)
     public String displayEditForm(Model model, @PathVariable int cheeseId){
         Cheese cheese = cheeseDao.findOne(cheeseId);
         model.addAttribute("cheese", cheese);
@@ -115,6 +115,6 @@ public class CheeseController {
         cheeseDao.save(cheese);
 
         return "redirect:";
-    }
+    }*/
 
 }
